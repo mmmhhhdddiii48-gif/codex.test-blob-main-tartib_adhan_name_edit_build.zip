@@ -1,0 +1,19 @@
+{
+  "name": "tarteeb-notebook-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Capacitor Android wrapper for the Tarteeb notebook web app",
+  "scripts": {
+    "check:webfiles": "node scripts/check-web-files.mjs",
+    "cap:doctor": "npm run check:webfiles && npx cap doctor",
+    "cap:sync": "npm run check:webfiles && npx cap sync android",
+    "cap:open": "npm run check:webfiles && npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}
